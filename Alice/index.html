@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alice no País das Maravilhas</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header-livro">
+    <h1>Alice no País das Maravilhas</h1>
+    <p>Leia, explore e destaque palavras mágicas!</p>
+  </header>
+  <main class="main-livro">
+    <div class="livro-container">
+      <button id="btn-prev" class="btn-pagina" aria-label="Página anterior">&#8592;</button>
+      <div class="livro">
+        <div class="pagina pagina-esquerda" id="pagina-esquerda">
+          <!-- Página esquerda do livro -->
+        </div>
+        <div class="pagina pagina-direita" id="pagina-direita">
+          <!-- Página direita do livro -->
+        </div>
+      </div>
+      <button id="btn-next" class="btn-pagina" aria-label="Próxima página">&#8594;</button>
+    </div>
+    <aside class="painel-lateral">
+      <section class="ferramentas">
+        <label for="num-letras">Quantidade de letras:</label>
+        <input type="number" id="num-letras" min="1" max="20" value="5">
+        <button id="destacar-btn">Destacar Palavras</button>
+      </section>
+      <section class="resultados">
+        <h3>Resultados</h3>
+        <p id="contagem-palavras">Palavras com X letras: 0</p>
+        <p id="palavras-repetidas">Palavras repetidas: Nenhuma</p>
+      </section>
+      <section class="paleta-cores">
+        <h3>Paleta de cores</h3>
+        <div class="color-palette">
+          <div class="swatch" style="background:#4A90E2"></div>
+          <div class="swatch" style="background:#A7D8FF"></div>
+          <div class="swatch" style="background:#FFD93D"></div>
+        </div>
+      </section>
+    </aside>
+  </main>
+  <footer class="footer-livro">
+    <small>Feito para crianças | Inspirado em Alice | Acessível WCAG AA</small>
+  </footer>
+  <script src="script.js"></script>
+
+  <!--
+     <section class="grid">
+      <div>
+        <div class="reader">
+          <div class="controls">
+            <label for="numLetters">Número de letras:</label>
+            <input type="number" id="numLetters" min="1" max="20" value="5">
+            
+            <label for="searchWord">Buscar palavra:</label>
+            <input type="text" id="searchWord" placeholder="ex.: rabbit">
+
+            <button id="applyBtn">Aplicar</button>
+            <button id="clearBtn">Limpar</button>
+          </div>
+
+          <div id="textContent">
+             Aqui você coloca o conteúdo do livro 
+          </div>
+        </div>
+      </div>
+
+       Estatísticas lateral 
+      <aside>
+        <div class="stat">
+          <h3>Palavras com X letras</h3>
+          <div class="value" id="countLetters">0</div>
+        </div>
+
+        <div class="stat">
+          <h3>Palavras repetidas</h3>
+          <div id="repeatedWords">Nenhuma</div>
+        </div>
+
+        <div class="stat">
+          <h3>Paleta de cores</h3>
+          <div class="color-palette">
+            <div class="swatch" style="background:#4A90E2"></div>
+            <div class="swatch" style="background:#A7D8FF"></div>
+            <div class="swatch" style="background:#FFD93D"></div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      Feito para crianças | Acessível WCAG AA | Inspirado em Alice
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
