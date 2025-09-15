@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Bingo</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Sorteador de Bingo</h1>
+    </header>
+
+    <main>
+        <div class="colunaEsquerda">
+            <section id="ultimo-numero">
+                <h2>Último Número:</h2>
+                <div id="numero-sorteado">--</div>
+            </section>
+
+            <progress id="barra-progresso" value="0" max="75"></progress>
+
+            <button id="sortearBtn">Sortear Número</button>
+            <button onclick="resetarJogo()" id="resetarBtn">Reiniciar Bingo</button>
+        </div>
+
+
+
+        <div class="colunaCentro">
+            <section id="tabela-bingo">
+                <div class="bingo-tabela">
+                    <div class="coluna" id="col-B">
+                        <h3>B</h3>
+                    </div>
+                    <div class="coluna" id="col-I">
+                        <h3>I</h3>
+                    </div>
+                    <div class="coluna" id="col-N">
+                        <h3>N</h3>
+                    </div>
+                    <div class="coluna" id="col-G">
+                        <h3>G</h3>
+                    </div>
+                    <div class="coluna" id="col-O">
+                        <h3>O</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="colunaDireita">
+            <section id="historico">
+                <h2>Histórico de Números</h2>
+                <div id="numeros-historico"></div>
+            </section>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Ana Clara Grizotto </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

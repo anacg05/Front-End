@@ -1,0 +1,202 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #a0cafd49;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(to right, #000066, #00007b, #00008f, #0000a4, #0000b8);
+    color: white;
+    padding: 0.5px;
+    font-size: 45px;
+    font-family: 'Great Vibes', cursive;
+}
+
+h1 {
+    margin: 30px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 20px;
+}
+
+.colunaEsquerda,
+.colunaDireita {
+    width: 20%;
+}
+
+.colunaCentro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+}
+
+.colunaEsquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    gap: 20px;
+}
+
+.colunaDireita {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+    gap: 20px;
+
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* BOTÕES */
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    background: linear-gradient(to right, #000066, #00007b, #00008f, #0000a4, #0000b8);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+    text-align: center;
+
+}
+
+button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+
+#numero-sorteado {
+    font-size: 4.9rem;
+    margin: 1rem 0;
+    color: #0000b8;
+    font-family: 'Bowlby One', serif;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* BARRA DE PROGRESSO */
+
+#barra-progresso {
+    width: 30%;
+    height: 10px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-bottom: 50px;
+}
+
+#barra-progresso::-webkit-progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+
+}
+
+#barra-progresso::-webkit-progress-value {
+    background: linear-gradient(to right, #0000b8, #a0cafd);
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+/* TABELA BINGO */
+
+.bingo-tabela {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.coluna {
+    margin: 0 10px;
+}
+
+.coluna h3 {
+    font-family: 'Bowlby One', serif;
+    background: linear-gradient(to right, #000066, #00007b, #00008f, #0000a4, #0000b8);
+    border-radius: 50px;
+    color: white;
+    padding: 0.5rem;
+    margin: 0;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 70px;
+    text-align: center;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.coluna span {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 8px auto;
+    background-color: #e0e0e0;
+    color: #333;
+    font-weight: bold;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    font-size: 25px;
+    line-height: 70px;
+    text-align: center;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.coluna .sorteado {
+    background-color: #4083ff;
+    color: white;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* HISTÓRICO */
+
+#historico {
+    margin-top: 30px;
+}
+
+#numeros-historico {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#numeros-historico .bola-historico {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #4083ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Bowlby One', serif;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,10 @@
+h1, p{
+    text-align:end;
+    margin-right: 10%;
+}
+
+body {
+       background-image: url("./meme.png");
+       background-repeat: no-repeat;
+       background-size:44%
+}
