@@ -1,14 +1,14 @@
-import './App.css'              
-import Profile from './Profile.jsx'
-import Imagem from './Imagem.jsx'
+import './App.css';
+import Imagem from './Imagem.jsx';
+import Profile from './Profile.jsx';
 
-function App() {    
+function App() {
   return (
     <div className='perfil'>
-      <Imagem/>
-      <Profile/>
+      <Imagem />
+      <Profile />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
