@@ -22,7 +22,7 @@ function FeaturedMovies() {
           <h2 className="section-title">Filmes em Destaque</h2>
         </div>
         <a href="#" className="see-all">
-          Ver Todos <span className="arrow"></span>
+          Ver Todos
         </a>
       </div>
 

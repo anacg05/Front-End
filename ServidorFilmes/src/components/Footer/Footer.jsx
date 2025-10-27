@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import Icon from '../../assets/icon.png'
+import Icon from '../../assets/icon2.png'
 
 function Footer() {
   return (
@@ -19,7 +19,7 @@ function Footer() {
           <a href="#" className="footer-link">Privacidade</a>
         </div>
 
-        <p className="footer-copyright">© 2025 CineGriz. Todos os direitos reservados.</p>
+        <p className="footer-copyright">© 2025 GrizFlix. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

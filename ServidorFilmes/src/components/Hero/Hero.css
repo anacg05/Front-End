@@ -77,13 +77,13 @@
 }
 
 .btn-primary {
-  background: #7c94ff;
+  background: #88b7ff;
   color: white;
   box-shadow: 0 10px 30px rgba(38, 117, 220, 0.3);
 }
 
 .btn-primary:hover {
-  background: #88b7ff;
+  background: #74a9fa;
 }
 
 .btn-secondary {

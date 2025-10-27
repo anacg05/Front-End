@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -10,9 +11,13 @@ function Hero() {
       <div className="hero-content">
         <h1 className="hero-title">DESCUBRA E GERENCIE</h1>
         <h2 className="hero-subtitle">SUA COLEÇÃO DE FILMES</h2>
-        
+
         <div className="hero-buttons">
-          <button className="btn btn-primary">Explorar Filmes</button>
+          <Link to="/listar_filmes">
+            <button className="btn btn-primary">Exibir Filmes</button>
+          </Link>
+
+
           <button className="btn btn-secondary">
             <svg className="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <line x1="12" y1="5" x2="12" y2="19"></line>

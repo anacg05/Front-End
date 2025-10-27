@@ -1,22 +1,25 @@
 import React from 'react';
-import Header from './components/Header/Header';
-import Hero from './components/Hero/Hero';
-import Genres from './components/Genres/Genres';
-import RecentMovies from './components/RecentMovies/RecentMovies';
-import FeaturedMovies from './components/FeaturedMovies/FeaturedMovies'
-import Footer from './components/Footer/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/Home/Home';
+import Login from './pages/Login/Login';
+import Cadastro from './pages/Cadastro/Cadastro';
+import ListarFilmes from './pages/ListarFilmes/ListarFilmes';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Hero />
-      <FeaturedMovies/>
-      <Genres />
-      <RecentMovies />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/listar_filmes" element={<ListarFilmes />} />
+
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 

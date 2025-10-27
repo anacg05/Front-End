@@ -20,7 +20,7 @@
 .section-icon {
   width: 1.5rem;
   height: 1.5rem;
-  color: #71baff;
+  color: #88b7ff;
 }
 
 .section-title {
@@ -42,12 +42,10 @@
 }
 
 .see-all:hover {
-  color: #7c94ff;
+  color: #74a9fa;
 }
 
-.arrow {
-  display: inline-block;
-}
+
 
 .movies-grid {
   display: grid;
@@ -101,15 +99,11 @@
   color: white;
   margin: 0 0 0.25rem 0;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   overflow: hidden;
   transition: color 0.2s;
 }
 
-.movie-card:hover .movie-title {
-  color: #4b5cf5;
-}
+
 
 .movie-info {
   display: flex;

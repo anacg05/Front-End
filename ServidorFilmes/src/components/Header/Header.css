@@ -23,6 +23,7 @@
 .logo {
   display: flex;
   align-items: center;
+  width: auto;
   gap: 0.5rem;
 }
 
@@ -54,7 +55,7 @@
 .search-input {
   width: 100%;
   background: #1f2937;
-  border: 1px solid #7c94ff;
+  border: 1px solid #2d3748;
   border-radius: 0.5rem;
   padding: 0.625rem 1rem 0.625rem 2.75rem;
   font-size: 0.875rem;
@@ -64,7 +65,7 @@
 }
 
 .search-input:focus {
-  border-color: #7c94ff;
+  border-color: #88b7ff;
   box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
 }
 
@@ -88,30 +89,49 @@
 
 .nav-link:hover,
 .nav-link.active:hover {
-  color: #88b7ff;
+  color: #74a9fa;
 }
 
 .nav-link.active {
   color: white;
 }
 
-.login-button {
+.login-buttonn {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: #7c94ff;
+  background: #88b7ff;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   transition: background 0.2s;
 }
 
-.login-button:hover {
+.login-buttonn:hover {
+  background: #74a9fa;
+}
+
+.register-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   background: #88b7ff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.register-button:hover {
+  background: #74a9fa;
 }
 
 .user-icon {

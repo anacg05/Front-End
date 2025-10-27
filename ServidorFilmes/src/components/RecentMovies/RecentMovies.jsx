@@ -36,7 +36,7 @@ function RecentMovies() {
       <div className="recent-header">
         <h2 className="recent-title">Catálogo de Filmes</h2>
         <a href="#" className="see-all-link">
-          Ver Todos <span className="arrow">→</span>
+          Ver Todos
         </a>
       </div>
 
