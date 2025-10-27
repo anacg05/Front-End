@@ -35,7 +35,7 @@
   font-size: 3.75rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(to right, #ffffff, #fecaca, #ffffff);
+  background: linear-gradient(to right, #ffffff, #88b7ff, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -48,14 +48,14 @@
   color: white;
 }
 
-.hero-description {
+/* .hero-description {
   font-size: 1.25rem;
   color: #d1d5db;
   margin-bottom: 2rem;
   max-width: 42rem;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .hero-buttons {
   display: flex;
@@ -77,23 +77,23 @@
 }
 
 .btn-primary {
-  background: #990202;
+  background: #7c94ff;
   color: white;
-  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+  box-shadow: 0 10px 30px rgba(38, 117, 220, 0.3);
 }
 
 .btn-primary:hover {
-  background: #b91c1c;
+  background: #88b7ff;
 }
 
 .btn-secondary {
   background: transparent;
   color: white;
-  border: 2px solid #990202;
+  border: 2px solid #88b7ff;
 }
 
 .btn-secondary:hover {
-  background: rgba(220, 38, 38, 0.1);
+  background: rgba(38, 117, 220, 0.3);
 }
 
 .btn-icon {

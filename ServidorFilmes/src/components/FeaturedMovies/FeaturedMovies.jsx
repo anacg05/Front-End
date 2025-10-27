@@ -22,7 +22,7 @@ function FeaturedMovies() {
           <h2 className="section-title">Filmes em Destaque</h2>
         </div>
         <a href="#" className="see-all">
-          Ver Todos <span className="arrow">→</span>
+          Ver Todos <span className="arrow"></span>
         </a>
       </div>
 
@@ -30,12 +30,6 @@ function FeaturedMovies() {
         {movies.map((movie, index) => (
           <div key={index} className="movie-card">
             <div className="movie-poster" style={{ background: movie.gradient }}>
-              <svg className="poster-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
-                <line x1="7" y1="2" x2="7" y2="22"></line>
-                <line x1="17" y1="2" x2="17" y2="22"></line>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-              </svg>
               <div className="poster-overlay"></div>
             </div>
             <h3 className="movie-title">{movie.title}</h3>

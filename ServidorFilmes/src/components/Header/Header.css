@@ -26,12 +26,6 @@
   gap: 0.5rem;
 }
 
-.logo-icon {
-  width: 2rem;
-  height: 2rem;
-  color: #cf0c0c;
-}
-
 .logo-text {
   font-size: 1.5rem;
   font-weight: 700;
@@ -60,7 +54,7 @@
 .search-input {
   width: 100%;
   background: #1f2937;
-  border: 1px solid #374151;
+  border: 1px solid #7c94ff;
   border-radius: 0.5rem;
   padding: 0.625rem 1rem 0.625rem 2.75rem;
   font-size: 0.875rem;
@@ -70,7 +64,7 @@
 }
 
 .search-input:focus {
-  border-color: #dc2626;
+  border-color: #7c94ff;
   box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
 }
 
@@ -85,16 +79,16 @@
 }
 
 .nav-link {
-  font-size: 0.875rem;
+  font-size: 20px;
   font-weight: 500;
-  color: #9ca3af;
+  color: white;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .nav-link:hover,
-.nav-link.active {
-  color: #dc2626;
+.nav-link.active:hover {
+  color: #88b7ff;
 }
 
 .nav-link.active {
@@ -105,22 +99,22 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: #1f2937;
+  background: #7c94ff;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   color: white;
-  font-size: 0.875rem;
+  font-size: 20px;
   font-weight: 500;
   cursor: pointer;
   transition: background 0.2s;
 }
 
 .login-button:hover {
-  background: #374151;
+  background: #88b7ff;
 }
 
 .user-icon {
-  width: 1rem;
-  height: 1rem;
+  width: 1.3rem;
+  height: 1.3rem;
 }

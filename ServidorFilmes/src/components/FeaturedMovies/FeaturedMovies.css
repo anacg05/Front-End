@@ -20,7 +20,7 @@
 .section-icon {
   width: 1.5rem;
   height: 1.5rem;
-  color: #990202;
+  color: #71baff;
 }
 
 .section-title {
@@ -31,8 +31,9 @@
 }
 
 .see-all {
-  color: #990202;
+  color: #88b7ff;
   font-weight: 500;
+  font-size: 25px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -41,7 +42,7 @@
 }
 
 .see-all:hover {
-  color: #ef4444;
+  color: #7c94ff;
 }
 
 .arrow {
@@ -107,7 +108,7 @@
 }
 
 .movie-card:hover .movie-title {
-  color: #dc2626;
+  color: #4b5cf5;
 }
 
 .movie-info {

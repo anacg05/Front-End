@@ -10,9 +10,7 @@ function Hero() {
       <div className="hero-content">
         <h1 className="hero-title">DESCUBRA E GERENCIE</h1>
         <h2 className="hero-subtitle">SUA COLEÇÃO DE FILMES</h2>
-        <p className="hero-description">
-          Organize, busque e compartilhe seus filmes favoritos em um só lugar
-        </p>
+        
         <div className="hero-buttons">
           <button className="btn btn-primary">Explorar Filmes</button>
           <button className="btn btn-secondary">
