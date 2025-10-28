@@ -1,6 +1,5 @@
 import React from 'react';
-import './FeaturedMovies.css';
-
+  
 function FeaturedMovies() {
   const movies = [
     { title: 'Oppenheimer', year: 2023, rating: 8.5, gradient: 'linear-gradient(to bottom right, #ea580c, #dc2626)' },

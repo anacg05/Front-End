@@ -1,3 +1,4 @@
+/* ===== SEÇÃO PRINCIPAL (HERO) ===== */
 .hero {
   position: relative;
   height: 500px;
@@ -7,12 +8,19 @@
   overflow: hidden;
 }
 
+/* ===== CAMADA DE FUNDO (GRADIENTE) ===== */
 .hero-background {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(127, 29, 29, 0.2), rgba(17, 24, 39, 0.4), rgba(30, 58, 138, 0.2));
+  background: linear-gradient(
+    to right,
+    rgba(127, 29, 29, 0.2),
+    rgba(17, 24, 39, 0.4),
+    rgba(30, 58, 138, 0.2)
+  );
 }
 
+/* ===== GRADE DECORATIVA (EFEITO DE LINHAS) ===== */
 .hero-grid {
   position: absolute;
   inset: 0;
@@ -23,6 +31,7 @@
   background-size: 40px 40px;
 }
 
+/* ===== CONTEÚDO PRINCIPAL DO HERO ===== */
 .hero-content {
   position: relative;
   z-index: 10;
@@ -31,6 +40,7 @@
   max-width: 56rem;
 }
 
+/* ===== TÍTULO PRINCIPAL ===== */
 .hero-title {
   font-size: 3.75rem;
   font-weight: 700;
@@ -41,6 +51,7 @@
   background-clip: text;
 }
 
+/* ===== SUBTÍTULO ===== */
 .hero-subtitle {
   font-size: 3rem;
   font-weight: 700;
@@ -48,12 +59,14 @@
   color: white;
 }
 
+/* ===== CONTAINER DOS BOTÕES ===== */
 .hero-buttons {
   display: flex;
   gap: 1rem;
   justify-content: center;
 }
 
+/* ===== ESTILO GERAL DOS BOTÕES ===== */
 .btns {
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
@@ -67,6 +80,7 @@
   gap: 0.5rem;
 }
 
+/* ===== BOTÃO PRIMÁRIO (principal) ===== */
 .btn-primary {
   background: #88b7ff;
   color: #030712;
@@ -78,6 +92,7 @@
   background: #74a9fa;
 }
 
+/* ===== BOTÃO SECUNDÁRIO (transparente) ===== */
 .btn-secondary {
   background: transparent;
   color: white;
@@ -89,11 +104,13 @@
   background: rgba(38, 117, 220, 0.3);
 }
 
+/* ===== ÍCONE DENTRO DO BOTÃO ===== */
 .btn-icon {
   width: 1.25rem;
   height: 1.25rem;
 }
 
+/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
@@ -111,3 +128,4 @@
     flex-direction: column;
   }
 }
+  

@@ -14,6 +14,7 @@ function MoviesCarousel({ title, movies, seeAllLink }) {
 
   return (
     <section className="featured-section">
+      {/* ===== CABEÇALHO ===== */}
       <div className="section-header">
         <div className="section-title-wrapper">
           <svg
@@ -36,6 +37,7 @@ function MoviesCarousel({ title, movies, seeAllLink }) {
         )}
       </div>
 
+      {/* ===== CARROSSEL ===== */}
       <div className="carousel-container">
         <button className="arrow-btn left" onClick={scrollLeft}>
           ❮
@@ -45,13 +47,23 @@ function MoviesCarousel({ title, movies, seeAllLink }) {
           {movies && movies.length > 0 ? (
             movies.map((movie, index) => (
               <div key={index} className="movie-card">
-                <div
-                  className="movie-poster"
-                  style={{ background: movie.gradient || "#222" }}
-                >
+                <div className="movie-poster">
+                  {/* Se tiver poster, exibe imagem; senão, exibe cor/gradiente */}
+                  {movie.poster ? (
+                    <img src={movie.poster} alt={movie.title} />
+                  ) : (
+                    <div
+                      className="poster-placeholder"
+                      style={{
+                        background: movie.gradient || "#1f2937",
+                      }}
+                    ></div>
+                  )}
                   <div className="poster-overlay"></div>
                 </div>
+
                 <h3 className="movie-title">{movie.title}</h3>
+
                 <div className="movie-info">
                   <span className="movie-year">{movie.year}</span>
                   <div className="movie-rating">
