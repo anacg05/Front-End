@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom"; // 1. Importar Link
 import "./MoviesCarousel.css";
 
 function MoviesCarousel({ title, movies, seeAllLink }) {
@@ -12,9 +13,16 @@ function MoviesCarousel({ title, movies, seeAllLink }) {
     carouselRef.current.scrollBy({ left: 400, behavior: "smooth" });
   };
 
+  // 2. Adicionar ID ao filme se não existir (para a URL)
+  // O seu AddMovie.jsx cria um 'id' com Date.now(), o que é ótimo.
+  // Se os filmes de ListarFilmes não tiverem, isso garante um fallback.
+  const getMovieId = (movie) => {
+    return movie.id || movie.title.toLowerCase().replace(/ /g, '-');
+  };
+
   return (
     <section className="featured-section">
-      {/* ===== CABEÇALHO ===== */}
+      {/* ... (cabeçalho da seção não muda) ... */}
       <div className="section-header">
         <div className="section-title-wrapper">
           <svg
@@ -46,9 +54,14 @@ function MoviesCarousel({ title, movies, seeAllLink }) {
         <div className="movies-grid" ref={carouselRef}>
           {movies && movies.length > 0 ? (
             movies.map((movie, index) => (
-              <div key={index} className="movie-card">
+              // 3. Envolver o card com o Link
+              <Link
+                key={index}
+                to={`/filme/${getMovieId(movie)}`} // URL amigável
+                state={{ movie: movie }} // Passa o objeto filme completo
+                className="movie-card" // Mover a classe para o Link
+              >
                 <div className="movie-poster">
-                  {/* Se tiver poster, exibe imagem; senão, exibe cor/gradiente */}
                   {movie.poster ? (
                     <img src={movie.poster} alt={movie.title} />
                   ) : (
@@ -79,7 +92,7 @@ function MoviesCarousel({ title, movies, seeAllLink }) {
                     <span className="rating-value">{movie.rating}</span>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))
           ) : (
             <p className="no-movies">Nenhum filme encontrado.</p>

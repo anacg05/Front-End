@@ -67,7 +67,7 @@
 }
 
 /* ===== ESTILO GERAL DOS BOTÕES ===== */
-.btns {
+.btnss {
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
   font-weight: 600;
@@ -81,33 +81,38 @@
 }
 
 /* ===== BOTÃO PRIMÁRIO (principal) ===== */
-.btn-primary {
+.btnn-primary {
   background: #88b7ff;
   color: #030712;
   box-shadow: 0 10px 30px rgba(38, 117, 220, 0.3);
   border: 2px solid #88b7ff;
 }
 
-.btn-primary:hover {
+.btnn-primary:hover {
   background: #74a9fa;
 }
 
 /* ===== BOTÃO SECUNDÁRIO (transparente) ===== */
-.btn-secondary {
+.btnn-secondary {
   background: transparent;
   color: white;
   box-shadow: 0 10px 30px rgba(38, 117, 220, 0.3);
   border: 2px solid #88b7ff;
 }
 
-.btn-secondary:hover {
+.btnn-secondary:hover {
   background: rgba(38, 117, 220, 0.3);
 }
 
 /* ===== ÍCONE DENTRO DO BOTÃO ===== */
-.btn-icon {
+.square-pen {
   width: 1.25rem;
   height: 1.25rem;
+}
+
+.icon-eye {
+  width: 1.20rem;
+  height: 1.20rem;
 }
 
 /* ===== RESPONSIVIDADE ===== */

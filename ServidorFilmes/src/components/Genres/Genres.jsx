@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // 1. Importar o Link
 import './Genres.css';
 
 function Genres() {
@@ -11,8 +12,7 @@ function Genres() {
     'Romance',
     'Aventura',
     'Suspense',
-    'Documentário',
-    'Animação'
+    'Animação' // Removi Documentário para bater com a lista
   ];
 
   return (
@@ -20,9 +20,15 @@ function Genres() {
       <h2 className="genres-title">Explorar por Gênero</h2>
       <div className="genres-container">
         {genres.map((genre, index) => (
-          <button key={index} className="genre-button">
+          // 2. Transforma o botão em um Link
+          <Link
+            key={index}
+            to="/listarfilmes"
+            state={{ genre: genre }} // 3. Passa o gênero no 'state'
+            className="genre-button"
+          >
             {genre}
-          </button>
+          </Link>
         ))}
       </div>
     </section>

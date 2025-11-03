@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-logo">
           <img src={Icon} alt='Icone caclete'/>
-          <span className="footer-logo-text">CineGriz</span>
+          <span className="footer-logo-text">GrizFlix</span>
         </div>
         <p className="footer-description">Gerenciador de filmes - Criado por Ana Clara Grizotto</p>
 

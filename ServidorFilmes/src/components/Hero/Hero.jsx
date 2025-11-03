@@ -12,21 +12,47 @@ function Hero() {
         <h1 className="hero-title">DESCUBRA E GERENCIE</h1>
         <h2 className="hero-subtitle">SUA COLEÇÃO DE FILMES</h2>
 
-        <div className="hero-buttons"> 
-          
+        <div className="hero-buttons">
+
           <Link to="/listarfilmes">
-            <button className="btns btn-primary">
-              Exibir Filmes
+            <button className="btnss btnn-primary">
+              <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="24" 
+              height="24" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              stroke-width="2" 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              class="icon-eye">
+                <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 
+                1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/>
+                <circle cx="12" cy="12" r="3"/>
+                </svg>
+              Ver Filmes
             </button>
           </Link>
 
-          <Link to="/adicionarfilme">
-            <button className="btns btn-secondary">
-              <svg className="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-              </svg>
-              Adicionar Filme
+          <Link to="/editarfilme">
+            <button className="btnss btnn-secondary">
+              <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="24" 
+              height="24" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              stroke-width="2" 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              class="square-pen">
+                <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 
+                0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z" />
+                </svg>
+              Editar Filme
             </button>
           </Link>
 

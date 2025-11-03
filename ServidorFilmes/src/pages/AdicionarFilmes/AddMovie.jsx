@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
 import './AddMovie.css';
 import Header from '../../components/Header/Header';
 
@@ -73,8 +75,16 @@ export default function AddMovie({ movies, setMovies }) {
 
   return (
     <>
-    <Header/>
+      <Header />
+      {/* 🔹 Botão de voltar */}
+      <Link to="/" className="back-button2">
+        <ArrowLeft size={22} />
+        <span>Voltar</span>
+      </Link>
+
+
       <div className="add-movie-container">
+        
         <div className="page-header">
           <h1>Adicionar Novo Filme</h1>
           <p>Preencha as informações do filme para adicionar à sua coleção</p>

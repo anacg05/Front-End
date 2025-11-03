@@ -2,13 +2,14 @@
 
 /* ===== CONTAINER PRINCIPAL ===== */
 .cadastro-container {
-  min-height: 100vh;
+min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
   padding: 20px;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  position: relative;
 }
 
 /* ===== CARD DE CADASTRO ===== */
@@ -236,7 +237,7 @@
 
 /* ===== BOTÃO DE VOLTAR ===== */
 .back-button {
-  position: absolute;
+  position: absolute; /* Agora é relativo ao .cadastro-container */
   top: 50px;
   left: 50px;
   display: flex;
@@ -255,26 +256,41 @@
 }
 
 .back-button:hover {
-  background: #88b7ff;
+ background: #88b7ff;
   transform: translateY(-2px);
 }
 
 /* ===== RESPONSIVIDADE (Mobile) ===== */
 @media (max-width: 480px) {
 
+  /* 🔹 MODIFICADO: Remove padding e alinha o card no topo */
+  .cadastro-container {
+    padding: 0;
+    align-items: flex-start;
+  }
+
   .back-button {
     top: 16px;
     left: 16px;
     padding: 8px 12px;
     font-size: 14px;
+    z-index: 50; /* Garante que fique acima do card */
   }
   
+  /* 🔹 MODIFICADO: O card agora se torna a "página" */
   .cadastro-card {
     border-radius: 0;
+    width: 100%;
+    max-width: 100%; /* Remove a largura máxima */
+    min-height: 100vh; /* Ocupa a altura total */
+    box-shadow: none; /* Remove a sombra */
+    border: none;
   }
 
   .cadastro-header {
     padding: 24px;
+    /* 🔹 ADICIONADO: Garante que o conteúdo fique abaixo do botão */
+    padding-top: 60px;
   }
 
   .cadastro-content {
