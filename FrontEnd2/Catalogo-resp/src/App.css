@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --bg: #ffffff;
+    --bg2: #e6e3e3;
+
+    --primary: #000047;
+    --secundary: #c2d7ff;
+    --accent:rgb(160, 160, 160);
+    --white: #fff;
+    --black: #000;
+
+    --text: var(--black);
+    --text2: #c5c5c5;
+
+    --border: #0202772d;
+    --shadow: 0 10px 10px #cecccc;
+
+    --focus: #003ab8;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif ;
+    font-weight: 500;
+    font-style: normal;
+
+    margin: 0;
+    color: var(--text);
+    background: var(--bg);
+}
+
+h1, h2, h3{
+    font-family: "Poppins", sans-serif ;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a:focus-visible,
+button:focus-visible{
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 10px;
+}
+
+.container{
+    width: min(1100px, 90%);
+    margin: 0 auto;
+    
+}
